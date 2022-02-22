@@ -1,0 +1,38 @@
+/* Base */
+
+:root{
+    --bg-color: #13293D;
+    --principal-color: #006494;
+    --detalhes-color: #247BA0;
+    --hover-color: #1B98E0;
+    --body-color: #E8F1F2;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Conteudo */
+
+body {
+    background-color: var(--body-color);
+}
+
+.input-container {
+    display: flex;
+    width: 40%;
+    height: auto;
+    position: relative;
+    margin: auto;
+}
+.input-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 10px;
+    padding: 30px 50px;
+    background-color: var(--principal-color);
+}
+
