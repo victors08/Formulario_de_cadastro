@@ -1,38 +1,159 @@
-/* Base */
-
-:root{
-    --bg-color: #13293D;
-    --principal-color: #006494;
-    --detalhes-color: #247BA0;
-    --hover-color: #1B98E0;
-    --body-color: #E8F1F2;
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,900&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
 }
 
 /* Conteudo */
 
 body {
-    background-color: var(--body-color);
+    display: flex;
+    background: #1B2029;
+    color: white;
+    font-weight: 500;
+    min-height: 100vh;
 }
 
-.input-container {
+main {
     display: flex;
-    width: 40%;
-    height: auto;
-    position: relative;
-    margin: auto;
-}
-.input-group {
-    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 10px 10px;
-    padding: 30px 50px;
-    background-color: var(--principal-color);
+    width: 50vw;
 }
 
+main h1 {
+    color: rgb(206, 13, 206);
+    font-size: 3rem;
+    margin-bottom: 3rem;
+}
+
+main .social-login {
+    display: flex;
+    flex-direction: column;
+    margin: 25px 0;
+}
+
+main .social-login div:first-child {
+    margin-left: 8px;
+}
+
+main .alternative {
+    margin: 2rem 0;
+}
+
+main .alternative span {
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.4);
+    position: relative;
+}
+
+main .alternativo {
+    margin: 2rem 0;
+}
+
+main .alternativo span {
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.4);
+    position: relative;
+}
+
+main .alternative span::before, main .alternative span::after {
+    position: absolute;
+    content: "";
+    height: 1px;
+    width: 100px;
+    bottom: 50%;
+    right: 95px;
+    background: rgba(255, 255, 255, 0.4);
+}
+
+main .alternative span::after {
+    left: 95px;
+}
+
+main .alternativo span::before, main .alternativo span::after {
+    position: absolute;
+    content: "";
+    height: 1px;
+    width: 90px;
+    bottom: 50%;
+    right: 130px;
+    background: rgba(255, 255, 255, 0.4);
+}
+
+main .alternativo span::after {
+    left: 130px;
+}
+
+
+main form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main form label {
+    display: flex;
+    flex-direction: column;
+}
+
+main form label span {
+    font-size: 1.1rem;
+    margin: 5px;
+}
+
+main form input {
+    background: #161923;
+    width: 300px;
+    height: 50px;
+    padding: 0 0.5rem;
+    margin-top: 1rem;
+    outline: none;
+    color: rgba(166, 166, 166);
+    border: 1px solid #040B18;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+main form input[type="submit"] {
+    cursor: pointer;
+    width: 60%;
+    margin: 3rem 0;
+    border: none;
+    border-radius: 32px;
+    color: white;
+    background: rgb(206, 13, 206);
+    font-size: 1rem;
+    transition: all 300ms ease-in-out;
+}
+
+main form input[type="submit"]:hover{
+    background: rgb(138, 7, 138);
+}
+
+section.images {
+    display: flex;
+    align-items: flex-end;
+}
+section.images img {
+    width: 80%;
+    padding: 2rem;
+}
+
+section.images .circulo {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(45deg, #E8CBC0, #636FA4);
+    clip-path: circle( 40% at right 80%);
+    margin-top: 90%;
+    z-index: -1;
+}
